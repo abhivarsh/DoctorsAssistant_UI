@@ -31,4 +31,11 @@ router.get('/patientProfile', (req, res) => {
 router.get('/patientProfile/medicalHistory', (req, res) => {
   res.render('medicalHistory');
 });
+
+router.get('/requestApoointment', (req, res) => {
+  res.render('notification');
+});
+router.get('/appointmentSchedule', (req, res) => {
+  res.render('appointmentSchedule');
+});
 module.exports = router;

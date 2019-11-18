@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Notification</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/style.mini.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%include partials/header%>
+
+    <section class="container bg-mine">
+      <br />
+      <h2 class="large text-mine">
+        Confirm an appointment
+      </h2>
+      <small>* = required field</small>
+      <form class="form">
+        <div class="form-group">
+          <select name="priority" class="form-control" disabled>
+            <option value="0">* Select priority</option>
+            <option value="Emergency">Emergency</option>
+            <option value="Priority">Priority</option>
+            <option value="Routine">Routine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Title"
+            name="title"
+            class="form-control"
+            disabled
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Symptoms"
+            name="symptoms"
+            class="form-control"
+            disabled
+          />
+          <small class="form-text"
+            >Please use comma separated values (eg. cold,body pains)</small
+          >
+        </div>
+        <div class="form-group">
+          <textarea
+            name="fullDescription"
+            cols="30"
+            rows="5"
+            placeholder="* Description"
+            class="form-control"
+            disabled
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input
+            type="datetime-local"
+            name="appointmentDate"
+            class="form-control"
+            required
+          />
+          <small class="form-text"
+            >Please select an appointment date and time</small
+          >
+        </div>
+        <input type="submit" class="btn-mine my-1" />
+        <a class="btn-mine my-1" href="./doctorProfile">Go Back</a>
+      </form>
+      <br />
+    </section>
+
+    <%include partials/footer%>
+  </body>
+</html>
