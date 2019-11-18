@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/style.mini.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%include partials/header%>
+
+    <section class="container bg-mine">
+      <h1 class="large text-mine my-2">
+        Medical History
+      </h1>
+      <small>* = required fields</small>
+      <form class="form">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Disease"
+            name="disease"
+            class="form-control"
+            required
+          />
+          <small class="form-text">
+            specify what was the disease that you have/had
+          </small>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Symptoms"
+            name="symptoms"
+            class="form-control"
+            required
+          />
+          <small class="form-text"
+            >Please use comma separated values (eg. cold,body pains)</small
+          >
+        </div>
+
+        <div class="form-group">
+          <textarea
+            name="treatment"
+            placeholder="* Treatment"
+            class="form-control"
+            required
+          ></textarea>
+          <small class="form-text"
+            >Tell us a little about how it was treated</small
+          >
+        </div>
+
+        <div class="form-group">
+          <h5>Date</h5>
+          <input type="date" name="from" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <select name="doctor" class="form-control">
+            <option value="0">Select Doctor</option>
+            <option value="aaaa">AAAA</option>
+            <option value="bbbb">BBBB</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <input type="submit" class="btn-mine my-1" />
+        <a class="btn-mine my-1" href="./">Go Back</a>
+      </form>
+      <br />
+    </section>
+
+    <%include partials/footer%>
+  </body>
+</html>

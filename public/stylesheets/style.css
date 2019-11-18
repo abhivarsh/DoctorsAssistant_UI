@@ -244,3 +244,42 @@ ul {
 .dash-buttons a:hover {
   color: #008080;
 }
+
+.patientProfile {
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.patient-top,
+.patient-about,
+.patient-info,
+.medicalDetails {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.patient-top img {
+  width: 150px;
+}
+
+.medicalHistory {
+  display: grid;
+  grid-template-columns: 3.5fr 0.75fr 0.75fr;
+  grid-gap: 2rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.medicalHistory img {
+  width: 50px;
+  margin-left: 0.5rem;
+}
+
+.medicalHistory div {
+  padding: 0.5rem;
+}

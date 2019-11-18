@@ -25,10 +25,10 @@ router.get('/doctorProfile/editDoctorsProfile', (req, res) => {
 router.get('/patientsProfile/patientsDashboard', (req, res) => {
   res.render('patientsDashboard');
 });
-router.get('/patientsProfile/editPatientsProfile', (req, res) => {
-  res.render('editPatientsProfile');
-});
 router.get('/patientProfile', (req, res) => {
   res.render('patientProfile');
+});
+router.get('/patientProfile/medicalHistory', (req, res) => {
+  res.render('medicalHistory');
 });
 module.exports = router;

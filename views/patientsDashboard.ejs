@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Patients Dashboard</title>
+    <title>Patients Profile</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <link rel="stylesheet" href="/stylesheets/style.mini.css" />
     <link
@@ -21,112 +21,111 @@
   <body>
     <%include partials/header%>
 
-    <section class="container bg-mine dashboard">
+    <section class="container bg-mine">
       <br />
       <h1 class="large text-mine">
-        Dashboard
+        Create Your Profile
       </h1>
-      <p class="lead"><i class="fas fa-user"></i> Welcome John Doe</p>
-      <article class="dash-buttons">
-        <a href="./editPatientsProfile" class="btn">
-          <i class="fas fa-user-circle text-mine"></i> Edit Profile
-        </a>
-        <a href="./addEducation" class="btn">
-          <i class="fab fa-black-tie text-mine"></i> Add Experience
-        </a>
-        <a href="./addExperience" class="btn">
-          <i class="fas fa-graduation-cap text-mine"></i> Add Education
-        </a>
-      </article>
+      <p class="lead">
+        <i class="fas fa-user"></i> Let's get some information to make your
+        profile stand out
+      </p>
+      <small>* = required fields</small>
+      <form class="form">
+        <div class="form-group">
+          <select name="gender" class="form-control">
+            <option value="0">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
 
-      <h3 class="my-2">
-        Experience Credentials
-      </h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Company</th>
-            <th class="hide-sm">Title</th>
-            <th class="hide-sm">Years</th>
-            <th colspan="2">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Microsoft</td>
-            <td class="hide-sm">Senior Developer</td>
-            <td class="hide-sm">
-              Oct 2011 - Current
-            </td>
-            <td>
-              <button class="btn-mine">
-                <i class="fas fa-edit"></i>&nbsp;Update
-              </button>
-            </td>
-            <td>
-              <button class="btn-mine">
-                <i class="fas fa-trash"></i>&nbsp;Delete
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>Sun Microsystems</td>
-            <td class="hide-sm">Senior Developer</td>
-            <td class="hide-sm">
-              Oct 2004 - Nov 2010
-            </td>
-            <td>
-              <button class="btn-mine">
-                <i class="fas fa-edit"></i>&nbsp;Update
-              </button>
-            </td>
-            <td>
-              <button class="btn-mine">
-                <i class="fas fa-trash"></i>&nbsp;Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="form-group">
+          <input
+            type="number"
+            name="age"
+            placeholder="Age"
+            class="form-control"
+          />
+        </div>
 
-      <h3 class="my-2">
-        Education Credentials
-      </h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>School</th>
-            <th class="hide-sm">Degree</th>
-            <th class="hide-sm">Years</th>
-            <th colspan="2">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>University of Washington</td>
-            <td class="hide-sm">Masters</td>
-            <td class="hide-sm">
-              Sep 1993 - June 1999
-            </td>
-            <td>
-              <button class="btn-mine">
-                <i class="fas fa-edit"></i>&nbsp;Update
-              </button>
-            </td>
-            <td>
-              <button class="btn-mine">
-                <i class="fas fa-trash"></i>&nbsp;Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="form-group">
+          <input
+            type="text"
+            name="height"
+            class="form-control"
+            placeholder="Height"
+          />
+        </div>
 
-      <article class="my-2">
-        <button class="btn btn-danger">
-          <i class="fas fa-user-minus"></i> Delete My Account
-        </button>
-      </article>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Phone"
+            name="phone"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Address"
+            name="address"
+            class="form-control"
+          />
+          <small class="form-text"
+            >Patient Address suggested (eg. 9306 Kittansett dr)</small
+          >
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Location"
+            name="location"
+            class="form-control"
+          />
+          <small class="form-text"
+            >City & state suggested (eg. Charlotte, NC)</small
+          >
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Pin"
+            name="pin"
+            class="form-control"
+          />
+          <small class="form-text"
+            >Pin code of the your Address (eg. 28262)</small
+          >
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Country"
+            name="country"
+            class="form-control"
+          />
+          <small class="form-text">Country suggested (eg. United States)</small>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            name="message"
+            cols="30"
+            rows="5"
+            placeholder="Patients bio"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <input type="submit" class="btn-mine my-1" />
+        <a class="btn-mine my-1" href="../patientProfile">Go Back</a>
+      </form>
       <br />
     </section>
 
