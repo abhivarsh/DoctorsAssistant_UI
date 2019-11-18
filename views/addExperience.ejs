@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add Experience</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/style.mini.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%include partials/header%>
+
+    <section class="container bg-mine">
+      <br />
+      <h2 class="large text-mine">
+        Add An Experience
+      </h2>
+      <p class="lead">
+        <i class="fas fa-code-branch"></i> Add any experience that you have had
+        in the past
+      </p>
+      <small>* = required field</small>
+      <form class="form">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Job Title"
+            name="title"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Company"
+            name="company"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Location"
+            name="location"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <h5>From Date*</h5>
+          <input type="date" name="from" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <h5>To Date</h5>
+          <input type="date" name="to" class="form-control" />
+        </div>
+        <div class="form-group">
+          <p><input type="checkbox" name="current" value="" /> Current Job</p>
+        </div>
+        <div class="form-group">
+          <textarea
+            name="description"
+            cols="30"
+            rows="5"
+            placeholder="Job Description"
+            class="form-control"
+          ></textarea>
+        </div>
+        <input type="submit" class="btn-mine my-1" />
+        <a class="btn-mine my-1" href="./doctorsDashboard">Go Back</a>
+      </form>
+      <br />
+    </section>
+
+    <%include partials/footer%>
+  </body>
+</html>

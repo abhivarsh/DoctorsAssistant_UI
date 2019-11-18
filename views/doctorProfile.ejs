@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doctors Profile</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/style.mini.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%include partials/header%>
+
+    <section class="container">
+      <article class="createApoointment">
+        <a href="/users/createApoointment"
+          ><button class="btn-mine">Request an Appointment</button></a
+        >
+      </article>
+      <article>
+        <a href="/users/doctorProfiles"
+          ><button class="btn-mine">Back to Profiles</button></a
+        >
+      </article>
+
+      <section class="profile-grid my-1">
+        <!-- Top -->
+        <article class="profile-top bg-mine-2 p-2">
+          <img
+            class="round-img my-1"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+            alt=""
+          />
+
+          <h2 class="large">John Doe</h2>
+          <p class="lead">Developer at Microsoft</p>
+          <p>Seattle, WA</p>
+        </article>
+        <!-- About -->
+        <article class="profile-about bg-mine p-2">
+          <h3 class="text-mine">John's Bio</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+            distinctio tempora. Obcaecati vero ad similique numquam. Commodi
+            incidunt quia non!
+          </p>
+          <div class="line"></div>
+          <h3 class="text-mine">Skill Set</h3>
+          <div class="skills">
+            <div class="p-1"><i class="fas fa-check"></i> HTML</div>
+            <div class="p-1"><i class="fas fa-check"></i> CSS</div>
+            <div class="p-1"><i class="fas fa-check"></i> JavaScript</div>
+            <div class="p-1"><i class="fas fa-check"></i> Python</div>
+          </div>
+        </article>
+        <!-- Experience -->
+        <article class="profile-exp bg-mine p-2">
+          <h3 class="text-mine">Experiences</h3>
+          <div>
+            <h4>Microsoft</h4>
+            <p>Oct 2011 - Current</p>
+            <p><strong>Position: </strong> Senior Developer</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Perspiciatis in sed officiis,
+              dolorem amet cum?
+            </p>
+          </div>
+          <div>
+            <h4>Sun Microsystems</h4>
+            <p>Oct 2004 - Nov 2010</p>
+            <p><strong>Position: </strong> Systems Admin</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Perspiciatis in sed officiis,
+              dolorem amet cum?
+            </p>
+          </div>
+        </article>
+        <!-- Education -->
+        <article class="profile-edu bg-mine p-2">
+          <h3 class="text-mine">Education</h3>
+          <div>
+            <h4>University Of Washington</h4>
+            <p>Sep 1993 - June 1999</p>
+            <p><strong>Degree: </strong> Masters</p>
+            <p><strong>Field Of Study: </strong> Computer Science</p>
+            <p>
+              <strong>Description: </strong>Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Perspiciatis in sed officiis,
+              dolorem amet cum?
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="bg-mine comments">
+        <h3 class="text-mine">Comments</h3>
+        <article class="comment bg-white p-1 my-1">
+          <div>
+            <img
+              class="round-img"
+              src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              possimus corporis sunt necessitatibus! Minus nesciunt soluta
+              suscipit nobis. Amet accusamus distinctio cupiditate blanditiis
+              dolor? Illo perferendis eveniet cum cupiditate aliquam?
+            </p>
+          </div>
+          <div class="delete">
+            <a href="#">
+              <center>
+                <span>
+                  <i class="fas fa-trash"></i>
+                </span>
+              </center>
+            </a>
+          </div>
+        </article>
+        <article class="comment bg-white p-1 my-1">
+          <div>
+            <img
+              class="round-img"
+              src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+              alt=""
+            />
+          </div>
+          <div>
+            <form class="form my-1">
+              <table>
+                <tr>
+                  <td>
+                    <textarea
+                      name="comment"
+                      placeholder="Comment on the doctor"
+                      class="form-control"
+                      required
+                    ></textarea>
+                  </td>
+                  <td>
+                    <center>
+                      <input
+                        type="submit"
+                        class="btn-mine my-1"
+                        value="Comment"
+                      />
+                    </center>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <%include partials/footer%>
+  </body>
+</html>

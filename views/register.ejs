@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/style.mini.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%include partials/header%>
+
+    <section class="container">
+      <article>
+        <h1 class="title">Register :</h1>
+        <form action="/register" method="POST" class="form">
+          <div class="form-group">
+            <span>Name:</span>
+            <input type="text" class="form-control" name="name" required />
+          </div>
+          <div class="form-group">
+            <span>Email:</span>
+            <input type="email" class="form-control" name="email" required />
+            <small>We use gravatar to get your image from your email</small>
+          </div>
+          <div class="form-group">
+            <span>Role:</span>
+            <select class="form-control" id="role">
+              <option>Doctor</option>
+              <option selected>Patient</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <span>Password:</span>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <span>Confirm Password:</span>
+            <input
+              type="password"
+              class="form-control"
+              name="confirmPassword"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn-mine">Register</button>
+          </div>
+        </form>
+        <p class="clue">
+          Do you have an account already?&nbsp;&nbsp;<a href="/login">Login</a>
+        </p>
+      </article>
+    </section>
+    <br />
+    <%include partials/footer%>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+body {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.footer {
+  margin-top: 5%;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  bottom: 0px;
+}
+.blank {
+  height: 5%;
+}
+.container {
+  margin-bottom: 5%;
+}
+.loginContainer {
+  left: 5%;
+  margin-top: 5%;
+  position: absolute;
+}
+.doc_log {
+  width: 7%;
+  position: relative;
+}
+.tag {
+  position: absolute;
+  bottom: 10px;
+}
+.form-group {
+  width: 60%;
+}
+.title {
+  color: #008080;
+}
+.form span,
+.form small,
+.form p {
+  color: #008080;
+}
+.clue a,
+.clue a:active {
+  text-decoration: none;
+  color: #008080;
+}
+.clue a:hover {
+  color: #008080;
+}
+.indexContainer {
+  margin-top: 15%;
+  color: #008080;
+}
+.indexContainer button {
+  background-color: #008080;
+  border: #008080;
+}
+
+.indexContainer button:hover {
+  background: #008080;
+  opacity: 0.9;
+}
+.alert {
+  width: 60%;
+}
+.dashboard button {
+  color: white;
+}
+
+.btn-mine {
+  background-color: rgb(0, 127, 127);
+  color: white;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  background-color: rgba(246, 248, 248, 0.384);
+  width: 80%;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+  color: #008080;
+}
+
+ul {
+  list-style: none;
+}
+.text-mine {
+  color: #008080;
+}
+
+.bg-mine {
+  background-color: rgba(246, 248, 248, 0.61);
+}
+
+.bg-mine-2 {
+  background-color: rgba(0, 127, 127, 0.61);
+  color: white;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas: 'top top' 'about about' 'exp edu';
+  grid-gap: 1rem;
+}
+
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-top img {
+  width: 150px;
+}
+.profile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-exp {
+  grid-area: exp;
+}
+
+.profile-edu {
+  grid-area: edu;
+}
+
+.profile-about .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-exp div,
+.profile-edu div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-exp,
+.profile-edu div::last-child {
+  border: none;
+}
+.profile-exp p,
+.profile-edu p {
+  margin: 0.5rem 0;
+}
+.comments {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.bg-white {
+  width: 80%;
+  margin-left: 10%;
+}
+.comment img {
+  width: 50px;
+  margin-left: 0.5rem;
+}
+.comment {
+  display: grid;
+  grid-template-columns: 0.5fr 4.5fr 0.5fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+.comment div {
+  padding: 0.5rem;
+}
+
+.comment form table {
+  width: 100%;
+}
+.container .createApoointment {
+  float: right;
+}
+
+.delete {
+  background-color: rgba(212, 35, 35, 0.877);
+  height: 100%;
+  position: relative;
+}
+
+.delete a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+.delete a:hover {
+  text-decoration: none;
+  color: white;
+}
+.delete:hover {
+  background-color: rgba(248, 1, 1, 0.952);
+  color: white;
+  text-decoration: none;
+}
+
+.profile img {
+  width: 150px;
+}
+
+.container a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.dash-buttons a:hover {
+  color: #008080;
+}
